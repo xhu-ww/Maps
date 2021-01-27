@@ -121,7 +121,7 @@ open class MapView @JvmOverloads constructor(
                 style = Paint.Style.FILL
                 canvas.drawPath(path, this)
 
-                strokeWidth = 0.5f
+                strokeWidth = 0.25f
                 color = Color.DKGRAY
                 style = Paint.Style.STROKE
                 canvas.drawPath(path, this)
