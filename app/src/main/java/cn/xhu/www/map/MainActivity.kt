@@ -10,9 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val animDrawable = findViewById<AppCompatImageView>(R.id.image).drawable
-        if (animDrawable is AnimatedVectorDrawable) {
-            animDrawable.start()
+        val animDrawable1 = findViewById<AppCompatImageView>(R.id.image1).drawable
+        val animDrawable2 = findViewById<AppCompatImageView>(R.id.image2).drawable
+        if (animDrawable1 is AnimatedVectorDrawable) {
+            animDrawable1.start()
+        }
+        if (animDrawable2 is AnimatedVectorDrawable) {
+            animDrawable2.start()
         }
     }
 }
